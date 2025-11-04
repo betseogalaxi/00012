@@ -6,6 +6,8 @@
   <meta name="description" content="BetPuan üyelik işlemleriyle lisanslı bahis dünyasına katıl. Hızlı kayıt, hoş geldin bonusu ve güvenilir bahis imkanı seni bekliyor.">
   <meta name="keywords" content="bahis siteleri, betpuan üyelik, deneme bonusu, güvenilir bahis siteleri, canlı bahis, yüksek oranlar, betpuan bonus, bahis kayıt">
   <title>BetPuan Üyelik 📝 Hızlı Kayıt & Hoş Geldin Bonusu 2025</title>
+  <link rel="canonical" href="https://nanocasino.top" />
+  
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#7EAF31] text-white font-sans">
@@ -61,18 +63,41 @@
     🤝 7/24 canlı destek ve kolay para yatırma-çekme seçenekleri ile %100 memnuniyet sağlar.
   </p>
 
-  <p class="text-lg font-semibold mt-6">
-    🔗 Resmi BetPuan üyelik adresleri:
-  </p>
+<p class="text-lg font-semibold mt-6">
+  🔗 Resmi BetPuan üyelik adresleri:
+</p>
 
-  <p class="text-md mt-1">
-    <a href="https://betpuan.co" class="underline hover:text-yellow-600 transition">betpuan.co</a> •
-    <a href="https://betpuanmobil.com" class="underline hover:text-yellow-600 transition">betpuanmobil.com</a> •
-    <a href="https://betpuanuyelik.com" class="underline hover:text-yellow-600 transition">betpuanuyelik.com</a> •
-    <a href="https://girisbetpuan.com" class="underline hover:text-yellow-600 transition">girisbetpuan.com</a> •
-    <a href="https://puanbetgiris.com" class="underline hover:text-yellow-600 transition">puanbetgiris.com</a> ✅
-  </p>
+<p class="text-md mt-1" id="betpuan-membership-links">
+  <!-- Randomized links will appear here -->
+</p>
 </section>
+
+<script>
+  const links = [
+    { href: "https://betpuan.co", text: "betpuan.co" },
+    { href: "https://betpuanguncelgiris.com", text: "betpuanguncelgiris.com" },
+    { href: "https://betpuanmobil.com", text: "betpuanmobil.com" },
+    { href: "https://betpuanuyelik.com", text: "betpuanuyelik.com" },
+    { href: "https://bonusbetpuan.com", text: "bonusbetpuan.com" },
+    { href: "https://girisbetpuan.com", text: "girisbetpuan.com" },
+    { href: "https://puanbetgiris.com", text: "puanbetgiris.com" }
+  ];
+
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  const container = document.getElementById('betpuan-membership-links');
+  const shuffled = shuffle([...links]);
+  container.innerHTML = shuffled.map(link =>
+    `<a href="${link.href}" class="underline hover:text-yellow-600 transition" rel="follow">${link.text}</a>`
+  ).join(' • ') + ' ✅';
+</script>
+
 
   <!-- Footer Section -->
   <footer class="bg-[#7EAF31] py-10 text-center text-white">
